@@ -1,0 +1,723 @@
+{
+  "id": "canvas",
+  "children": [
+    {
+      "id": "bgp_nuk_1",
+      "labels": [
+        {
+          "text": "BGP-NUK-1",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.font.size": "6"
+          },
+          "x": 25.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "text": "ASR9k",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 25.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "ports": [
+        {
+          "id": "bgp_nuk_1_0",
+          "labels": [
+            {
+              "text": "Te0/0/0/0",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.port.index": "0",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": 5.0,
+              "y": 2.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "WEST"
+          },
+          "x": -4.0,
+          "y": 36.8,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "id": "bgp_nuk_1_1",
+          "labels": [
+            {
+              "text": "Te0/0/0/1",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.port.index": "-1",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": 1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "WEST"
+          },
+          "x": -0.0,
+          "y": 27.599999999999998,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "bgp_nuk_1_2",
+          "labels": [
+            {
+              "text": "Te0/0/0/2",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.port.index": "-2",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": 1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "WEST"
+          },
+          "x": -0.0,
+          "y": 18.4,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "bgp_nuk_1_3",
+          "labels": [
+            {
+              "text": "Te0/0/0/3",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.port.index": "-3",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": 1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "WEST"
+          },
+          "x": -0.0,
+          "y": 9.2,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.nodeSize.constraints": "[]",
+        "org.eclipse.elk.nodeLabels.placement": "[H_CENTER, V_CENTER, INSIDE]",
+        "org.eclipse.elk.portLabels.placement": "INSIDE",
+        "org.eclipse.elk.portConstraints": "FIXED_ORDER"
+      },
+      "x": 226.0,
+      "y": 88.6,
+      "width": 50.0,
+      "height": 50.0
+    },
+    {
+      "id": "bgp_nuk_2",
+      "labels": [
+        {
+          "text": "BGP-NUK-2",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.font.size": "6"
+          },
+          "x": 25.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "ports": [
+        {
+          "id": "bgp_nuk_2_0",
+          "labels": [
+            {
+              "text": "Te0/0/0/0",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": -1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "EAST"
+          },
+          "x": 50.0,
+          "y": 40.0,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "bgp_nuk_2_1",
+          "labels": [
+            {
+              "text": "Te0/0/0/1",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": -1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "EAST"
+          },
+          "x": 50.0,
+          "y": 30.0,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "bgp_nuk_2_2",
+          "labels": [
+            {
+              "text": "Te0/0/0/2",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": -1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "EAST"
+          },
+          "x": 50.0,
+          "y": 20.0,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "bgp_nuk_2_3",
+          "labels": [
+            {
+              "text": "Te0/0/0/3",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": -1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "EAST"
+          },
+          "x": 50.0,
+          "y": 10.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.nodeSize.constraints": "[]",
+        "org.eclipse.elk.nodeLabels.placement": "[H_CENTER, V_CENTER, INSIDE]",
+        "org.eclipse.elk.portLabels.placement": "INSIDE"
+      },
+      "x": 12.0,
+      "y": 27.0,
+      "width": 50.0,
+      "height": 50.0
+    },
+    {
+      "id": "pe_nuk_1",
+      "labels": [
+        {
+          "text": "PE-NUK-1",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.font.size": "6"
+          },
+          "x": 25.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "ports": [
+        {
+          "id": "pe_nuk_1_0",
+          "labels": [
+            {
+              "text": "Te0/0/0/0",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": -1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "EAST"
+          },
+          "x": 50.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "pe_nuk_1_1",
+          "labels": [
+            {
+              "text": "Te0/0/0/1",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": 1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "WEST"
+          },
+          "x": -0.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.nodeSize.constraints": "[]",
+        "org.eclipse.elk.nodeLabels.placement": "[H_CENTER, V_CENTER, INSIDE]",
+        "org.eclipse.elk.portLabels.placement": "INSIDE"
+      },
+      "x": 122.0,
+      "y": 82.0,
+      "width": 50.0,
+      "height": 50.0
+    },
+    {
+      "id": "pe_nuk_2",
+      "labels": [
+        {
+          "text": "PE-NUK-2",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.font.size": "6"
+          },
+          "x": 25.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "ports": [
+        {
+          "id": "pe_nuk_2_0",
+          "labels": [
+            {
+              "text": "Te0/0/0/0",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": -1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "EAST"
+          },
+          "x": 50.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        },
+        {
+          "id": "pe_nuk_2_1",
+          "labels": [
+            {
+              "text": "Te0/0/0/1",
+              "layoutOptions": {
+                "org.eclipse.elk.edgeLabels.placement": "CENTER",
+                "org.eclipse.elk.font.size": "4"
+              },
+              "x": 1.0,
+              "y": 0.0,
+              "width": 0.0,
+              "height": 0.0
+            }
+          ],
+          "layoutOptions": {
+            "org.eclipse.elk.port.side": "WEST"
+          },
+          "x": -0.0,
+          "y": 25.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.nodeSize.constraints": "[]",
+        "org.eclipse.elk.nodeLabels.placement": "[H_CENTER, V_CENTER, INSIDE]",
+        "org.eclipse.elk.portLabels.placement": "INSIDE"
+      },
+      "x": 122.0,
+      "y": 12.0,
+      "width": 50.0,
+      "height": 50.0
+    }
+  ],
+  "layoutOptions": {
+    "org.eclipse.elk.nodeLabels.placement": "[H_CENTER, V_CENTER, INSIDE]",
+    "org.eclipse.elk.direction": "RIGHT",
+    "org.eclipse.elk.algorithm": "layered",
+    "org.eclipse.elk.nodeSize.constraints": "[]",
+    "org.eclipse.elk.aspectRatio": "1.414",
+    "org.eclipse.elk.zoomToFit": "true",
+    "org.eclipse.elk.portConstraints": "FIXED_ORDER",
+    "org.eclipse.elk.nodeSize.options": "[DEFAULT_MINIMUM_SIZE]"
+  },
+  "x": 0.0,
+  "y": 0.0,
+  "width": 288.0,
+  "height": 177.4,
+  "edges": [
+    {
+      "id": "E1",
+      "sources": [
+        "bgp_nuk_1_0"
+      ],
+      "targets": [
+        "bgp_nuk_2_0"
+      ],
+      "labels": [
+        {
+          "text": "uplink",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.edgeLabels.inline": "true",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 147.0,
+          "y": 163.4,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "sections": [
+        {
+          "id": "s0",
+          "startPoint": {
+            "x": 222.0,
+            "y": 127.39999999999999
+          },
+          "endPoint": {
+            "x": 62.0,
+            "y": 67.0
+          },
+          "bendPoints": [
+            {
+              "x": 212.0,
+              "y": 127.39999999999999
+            },
+            {
+              "x": 212.0,
+              "y": 163.9
+            },
+            {
+              "x": 72.0,
+              "y": 163.9
+            },
+            {
+              "x": 72.0,
+              "y": 67.0
+            }
+          ]
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.edge.thickness": "1.0",
+        "org.eclipse.elk.edge.type": "UNDIRECTED",
+        "org.eclipse.elk.junctionPoints": "()"
+      }
+    },
+    {
+      "id": "E2",
+      "sources": [
+        "bgp_nuk_1_1"
+      ],
+      "targets": [
+        "bgp_nuk_2_1"
+      ],
+      "labels": [
+        {
+          "text": "peer1",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.edgeLabels.inline": "true",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 147.0,
+          "y": 152.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "sections": [
+        {
+          "id": "s1",
+          "startPoint": {
+            "x": 226.0,
+            "y": 116.19999999999999
+          },
+          "endPoint": {
+            "x": 62.0,
+            "y": 57.0
+          },
+          "bendPoints": [
+            {
+              "x": 202.0,
+              "y": 116.19999999999999
+            },
+            {
+              "x": 202.0,
+              "y": 152.2
+            },
+            {
+              "x": 82.0,
+              "y": 152.2
+            },
+            {
+              "x": 82.0,
+              "y": 57.0
+            }
+          ]
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.edge.thickness": "0.7",
+        "org.eclipse.elk.edge.type": "NONE",
+        "org.eclipse.elk.junctionPoints": "()"
+      }
+    },
+    {
+      "id": "E3",
+      "sources": [
+        "bgp_nuk_1_2"
+      ],
+      "targets": [
+        "pe_nuk_1_0"
+      ],
+      "labels": [
+        {
+          "text": "peer2",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.edgeLabels.inline": "true",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 192.0,
+          "y": 106.8,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "sections": [
+        {
+          "id": "s2",
+          "startPoint": {
+            "x": 226.0,
+            "y": 107.0
+          },
+          "endPoint": {
+            "x": 172.0,
+            "y": 107.0
+          }
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.edge.thickness": "0.7",
+        "org.eclipse.elk.edge.type": "NONE",
+        "org.eclipse.elk.junctionPoints": "()"
+      }
+    },
+    {
+      "id": "E4",
+      "sources": [
+        "bgp_nuk_1_3"
+      ],
+      "targets": [
+        "pe_nuk_2_0"
+      ],
+      "labels": [
+        {
+          "text": "peer3",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.edgeLabels.inline": "true",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 192.0,
+          "y": 36.8,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "sections": [
+        {
+          "id": "s3",
+          "startPoint": {
+            "x": 226.0,
+            "y": 97.8
+          },
+          "endPoint": {
+            "x": 172.0,
+            "y": 37.0
+          },
+          "bendPoints": [
+            {
+              "x": 202.0,
+              "y": 97.8
+            },
+            {
+              "x": 202.0,
+              "y": 37.0
+            }
+          ]
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.edge.thickness": "0.7",
+        "org.eclipse.elk.edge.type": "NONE",
+        "org.eclipse.elk.junctionPoints": "()"
+      }
+    },
+    {
+      "id": "E5",
+      "sources": [
+        "bgp_nuk_2_2"
+      ],
+      "targets": [
+        "pe_nuk_1_1"
+      ],
+      "labels": [
+        {
+          "text": "peer4",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.edgeLabels.inline": "true",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 102.0,
+          "y": 106.8,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "sections": [
+        {
+          "id": "s4",
+          "startPoint": {
+            "x": 62.0,
+            "y": 47.0
+          },
+          "endPoint": {
+            "x": 122.0,
+            "y": 107.0
+          },
+          "bendPoints": [
+            {
+              "x": 92.0,
+              "y": 47.0
+            },
+            {
+              "x": 92.0,
+              "y": 107.0
+            }
+          ]
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.edge.thickness": "0.7",
+        "org.eclipse.elk.edge.type": "NONE",
+        "org.eclipse.elk.junctionPoints": "()"
+      }
+    },
+    {
+      "id": "E6",
+      "sources": [
+        "bgp_nuk_2_3"
+      ],
+      "targets": [
+        "pe_nuk_2_1"
+      ],
+      "labels": [
+        {
+          "text": "peer",
+          "layoutOptions": {
+            "org.eclipse.elk.edgeLabels.placement": "CENTER",
+            "org.eclipse.elk.edgeLabels.inline": "true",
+            "org.eclipse.elk.font.size": "4"
+          },
+          "x": 102.0,
+          "y": 36.8,
+          "width": 0.0,
+          "height": 0.0
+        }
+      ],
+      "sections": [
+        {
+          "id": "s5",
+          "startPoint": {
+            "x": 62.0,
+            "y": 37.0
+          },
+          "endPoint": {
+            "x": 122.0,
+            "y": 37.0
+          }
+        }
+      ],
+      "layoutOptions": {
+        "org.eclipse.elk.edge.thickness": "0.7",
+        "org.eclipse.elk.edge.type": "NONE",
+        "org.eclipse.elk.junctionPoints": "()"
+      }
+    }
+  ]
+}
