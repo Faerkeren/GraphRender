@@ -11,7 +11,7 @@ __all__ = ["ElkJsonEnrich"]
 
 class ElkJsonEnrich:
     """
-    Fill missing ELK graph values using the bundled defaults (elk_defaults_json).
+    Fill missing ELK graph values using the Model.
     Existing values are preserved; defaults only fill gaps. Defaults are sourced
     from the Pydantic model definitions in elk_model.py, so adding new defaults
     to that model automatically flows here.

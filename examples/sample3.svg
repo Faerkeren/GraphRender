@@ -73,6 +73,9 @@ svg {
   stroke: var(--c-node-stroke);
   rx: var(--node-radius);
 }
+#nodes .node > g.icon {
+  color: var(--c-node-stroke);
+}
 #nodes .node > .labels > text {
   fill: var(--c-text);
 }
@@ -105,42 +108,54 @@ svg {
 }
 
 #nodes .node.router > rect {
-  fill: var(--c-group-1-primary);
+  fill: var(--c-group-10-primary);
+}
+#nodes .node.router > g.icon {
+  color: var(--c-group-10-secondary);
 }
 #nodes .node.router > .labels > text {
-  fill: var(--c-group-1-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.router > .ports > .port > .labels text {
-  fill: var(--c-group-1-secondary);
+  fill: var(--c-text);
 }
 
 #nodes .node.switch > rect {
   fill: var(--c-group-2-primary);
 }
+#nodes .node.switch > g.icon {
+  color: var(--c-group-2-secondary);
+}
 #nodes .node.switch > .labels > text {
-  fill: var(--c-group-2-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.switch > .ports > .port > .labels text {
-  fill: var(--c-group-2-secondary);
+  fill: var(--c-text);
 }
 
 #nodes .node.server > rect {
   fill: var(--c-group-3-primary);
 }
+#nodes .node.server > g.icon {
+  color: var(--c-group-3-secondary);
+}
 #nodes .node.server > .labels > text {
-  fill: var(--c-group-3-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.server > .ports > .port > .labels text {
-  fill: var(--c-group-3-secondary);
+  fill: var(--c-text);
 }
 
 #nodes .node.firewall > rect {
   fill: var(--c-group-4-primary);
 }
+#nodes .node.firewall > g.icon {
+  color: var(--c-group-4-secondary);
+}
 #nodes .node.firewall > .labels > text {
-  fill: var(--c-group-4-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.firewall > .ports > .port > .labels text {
-  fill: var(--c-group-4-secondary);
+  fill: var(--c-text);
 }
 </style><defs><marker id="arrow" refX="5" refY="5" markerUnits="strokeWidth" markerWidth="10" markerHeight="10" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 2 5 Z " fill="#222"/></marker><marker id="arrow-open" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="10" markerHeight="10" orient="auto"><path stroke="#222" stroke-width="1.5" d="M 0 0 L 10 5 L 0 10" fill="none"/></marker><marker id="triangle-hollow" refX="10" refY="6" markerUnits="strokeWidth" markerWidth="12" markerHeight="12" orient="auto"><path stroke="#222" stroke-width="1.5" d="M 0 0 L 10 6 L 0 12 Z " fill="white"/></marker></defs><g id="nodes"><g id="node_1" class="node router"><rect stroke="black" x="37.0" y="12.0" width="50.0" height="50.0" rx="2" fill="lightblue"/><g class="icon" transform="translate(62.0,37.0) scale(1.75) translate(-12.0,-12.0)"><path xmlns="http://www.w3.org/2000/svg" fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8m1-7v3h2l-3 3l-3-3h2v-3m-6 0h3v2l3-3l-3-3v2H5m6 0V8H9l3-3l3 3h-2v3m6 0h-3V9l-3 3l3 3v-2h3" /></g><g class="labels"><text dominant-baseline="middle" text-anchor="middle" font-size="16.0" fill="#111" x="62.0" y="75.0">BGP-NUK-1</text></g><g class="ports"><g id="node_1_eth0" class="port"><rect stroke="#111" x="87.0" y="44.666666666666664" width="2.0" height="2.0" fill="#444"/><g class="labels"><text dominant-baseline="middle" text-anchor="end" font-size="8.0" fill="#111" x="115.0" y="51.666666666666664">eth0</text></g></g><g id="node_1_eth1" class="port"><rect stroke="#111" x="87.0" y="27.333333333333332" width="2.0" height="2.0" fill="#444"/><g class="labels"><text dominant-baseline="middle" text-anchor="end" font-size="8.0" fill="#111" x="115.0" y="22.333333333333332">eth1</text></g></g></g></g><g id="node_2" class="node router"><rect stroke="black" x="333.0" y="12.0" width="50.0" height="50.0" rx="2" fill="lightblue"/><g class="icon" transform="translate(358.0,37.0) scale(1.75) translate(-12.0,-12.0)"><path xmlns="http://www.w3.org/2000/svg" fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8m1-7v3h2l-3 3l-3-3h2v-3m-6 0h3v2l3-3l-3-3v2H5m6 0V8H9l3-3l3 3h-2v3m6 0h-3V9l-3 3l3 3v-2h3" /></g><g class="labels"><text dominant-baseline="middle" text-anchor="middle" font-size="16.0" fill="#111" x="358.0" y="75.0">BGP-NUK-2</text></g><g class="ports"><g id="node_2_eth0" class="port"><rect stroke="#111" x="331.0" y="44.666666666666664" width="2.0" height="2.0" fill="#444"/><g class="labels"><text dominant-baseline="middle" text-anchor="start" font-size="8.0" fill="#111" x="305.0" y="51.666666666666664">eth0</text></g></g><g id="node_2_eth1" class="port"><rect stroke="#111" x="331.0" y="27.333333333333332" width="2.0" height="2.0" fill="#444"/><g class="labels"><text dominant-baseline="middle" text-anchor="start" font-size="8.0" fill="#111" x="305.0" y="22.333333333333332">eth1</text></g></g></g></g></g><g id="edges"><g id="E1" class="edge"><polyline stroke="#222" stroke-width="1.0" points="89.0 45.666666666666664 331.0 45.666666666666664" fill="none"/><g class="labels"><text dominant-baseline="middle" text-anchor="middle" font-size="10.0" fill="#111" x="210.0" y="53.666666666666664">Uplink</text></g></g><g id="E2" class="edge"><polyline stroke="#222" stroke-width="1.0" points="89.0 28.333333333333332 331.0 28.333333333333332" fill="none"/><g class="labels"><text dominant-baseline="middle" text-anchor="middle" font-size="10.0" fill="#111" x="210.0" y="20.333333333333332">Uplink</text></g></g></g></svg>

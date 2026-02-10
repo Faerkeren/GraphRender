@@ -73,6 +73,9 @@ svg {
   stroke: var(--c-node-stroke);
   rx: var(--node-radius);
 }
+#nodes .node > g.icon {
+  color: var(--c-node-stroke);
+}
 #nodes .node > .labels > text {
   fill: var(--c-text);
 }
@@ -105,41 +108,53 @@ svg {
 }
 
 #nodes .node.router > rect {
-  fill: var(--c-group-1-primary);
+  fill: var(--c-group-10-primary);
+}
+#nodes .node.router > g.icon {
+  color: var(--c-group-10-secondary);
 }
 #nodes .node.router > .labels > text {
-  fill: var(--c-group-1-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.router > .ports > .port > .labels text {
-  fill: var(--c-group-1-secondary);
+  fill: var(--c-text);
 }
 
 #nodes .node.switch > rect {
   fill: var(--c-group-2-primary);
 }
+#nodes .node.switch > g.icon {
+  color: var(--c-group-2-secondary);
+}
 #nodes .node.switch > .labels > text {
-  fill: var(--c-group-2-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.switch > .ports > .port > .labels text {
-  fill: var(--c-group-2-secondary);
+  fill: var(--c-text);
 }
 
 #nodes .node.server > rect {
   fill: var(--c-group-3-primary);
 }
+#nodes .node.server > g.icon {
+  color: var(--c-group-3-secondary);
+}
 #nodes .node.server > .labels > text {
-  fill: var(--c-group-3-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.server > .ports > .port > .labels text {
-  fill: var(--c-group-3-secondary);
+  fill: var(--c-text);
 }
 
 #nodes .node.firewall > rect {
   fill: var(--c-group-4-primary);
 }
+#nodes .node.firewall > g.icon {
+  color: var(--c-group-4-secondary);
+}
 #nodes .node.firewall > .labels > text {
-  fill: var(--c-group-4-secondary);
+  fill: var(--c-text);
 }
 #nodes .node.firewall > .ports > .port > .labels text {
-  fill: var(--c-group-4-secondary);
+  fill: var(--c-text);
 }

@@ -7,16 +7,19 @@
         >rect {
           fill: var(--c-group-#{$group}-primary);
         }
+        >g.icon {
+          color: var(--c-group-#{$group}-secondary);
+        }
         >.labels {
           >text {
-            fill: var(--c-group-#{$group}-secondary);
+            fill: var(--c-text);
           }
         }
         >.ports {
           >.port {
             >.labels {
               text {
-                fill: var(--c-group-#{$group}-secondary);
+                fill: var(--c-text);
               }
             }
           }
@@ -43,6 +46,9 @@ svg {
       stroke: var(--c-node-stroke);
       rx: var(--node-radius);
     }
+    >g.icon {
+      color: var(--c-node-stroke);
+    } 
     >.labels {
       >text {
         fill: var(--c-text);
@@ -91,7 +97,7 @@ svg {
   }
 }
 
-@include add_node_group("router", 1);
+@include add_node_group("router", 10);
 @include add_node_group("switch", 2);
 @include add_node_group("server", 3);
 @include add_node_group("firewall", 4);
