@@ -17,6 +17,7 @@
   --c-stroke: light-dark(var(--c-light-stroke), var(--c-dark-stroke));
   --stroke-width: 3px;
   --c-node-stroke: light-dark(var(--c-light-stroke), var(--c-dark-stroke));
+  --c-node-icon: var(--c-dark-stroke);
   --c-node-fill: #4f77b7;
   --node-radius: 2px;
   --c-cluster-background: light-dark(var(--c-light-cluster-background), var(--c-dark-cluster-background));
@@ -74,7 +75,7 @@ svg {
   rx: var(--node-radius);
 }
 #nodes .node > g.icon {
-  color: var(--c-node-stroke);
+  color: var(--c-node-icon);
 }
 #nodes .node > .labels > text {
   fill: var(--c-text);

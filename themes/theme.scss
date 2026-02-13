@@ -47,7 +47,7 @@ svg {
       rx: var(--node-radius);
     }
     >g.icon {
-      color: var(--c-node-stroke);
+      color: var(--c-node-icon);
     } 
     >.labels {
       >text {

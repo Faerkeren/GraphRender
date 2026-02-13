@@ -5772,10 +5772,10 @@
       "labels": [
         {
           "text": "Core Ring 1",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5796,10 +5796,10 @@
       "labels": [
         {
           "text": "Core Ring 2",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5820,10 +5820,10 @@
       "labels": [
         {
           "text": "Core Ring 3",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5844,10 +5844,10 @@
       "labels": [
         {
           "text": "Core Ring 4",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5868,10 +5868,10 @@
       "labels": [
         {
           "text": "Core Ring 5",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5892,10 +5892,10 @@
       "labels": [
         {
           "text": "Core Ring 6",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5916,10 +5916,10 @@
       "labels": [
         {
           "text": "AGG-01 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5940,10 +5940,10 @@
       "labels": [
         {
           "text": "AGG-01 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5964,10 +5964,10 @@
       "labels": [
         {
           "text": "AGG-02 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -5988,10 +5988,10 @@
       "labels": [
         {
           "text": "AGG-02 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6012,10 +6012,10 @@
       "labels": [
         {
           "text": "AGG-03 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6036,10 +6036,10 @@
       "labels": [
         {
           "text": "AGG-03 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6060,10 +6060,10 @@
       "labels": [
         {
           "text": "AGG-04 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6084,10 +6084,10 @@
       "labels": [
         {
           "text": "AGG-04 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6108,10 +6108,10 @@
       "labels": [
         {
           "text": "AGG-05 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6132,10 +6132,10 @@
       "labels": [
         {
           "text": "AGG-05 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6156,10 +6156,10 @@
       "labels": [
         {
           "text": "AGG-06 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6180,10 +6180,10 @@
       "labels": [
         {
           "text": "AGG-06 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6204,10 +6204,10 @@
       "labels": [
         {
           "text": "AGG-07 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6228,10 +6228,10 @@
       "labels": [
         {
           "text": "AGG-07 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6252,10 +6252,10 @@
       "labels": [
         {
           "text": "AGG-08 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6276,10 +6276,10 @@
       "labels": [
         {
           "text": "AGG-08 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6300,10 +6300,10 @@
       "labels": [
         {
           "text": "AGG-09 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6324,10 +6324,10 @@
       "labels": [
         {
           "text": "AGG-09 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6348,10 +6348,10 @@
       "labels": [
         {
           "text": "AGG-10 uplink A",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6372,10 +6372,10 @@
       "labels": [
         {
           "text": "AGG-10 uplink B",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6396,10 +6396,10 @@
       "labels": [
         {
           "text": "PE-01 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6420,10 +6420,10 @@
       "labels": [
         {
           "text": "PE-02 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6444,10 +6444,10 @@
       "labels": [
         {
           "text": "PE-03 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6468,10 +6468,10 @@
       "labels": [
         {
           "text": "PE-04 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6492,10 +6492,10 @@
       "labels": [
         {
           "text": "PE-05 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6516,10 +6516,10 @@
       "labels": [
         {
           "text": "PE-06 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6540,10 +6540,10 @@
       "labels": [
         {
           "text": "PE-07 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6564,10 +6564,10 @@
       "labels": [
         {
           "text": "PE-08 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6588,10 +6588,10 @@
       "labels": [
         {
           "text": "PE-09 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6612,10 +6612,10 @@
       "labels": [
         {
           "text": "PE-10 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6636,10 +6636,10 @@
       "labels": [
         {
           "text": "PE-11 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6660,10 +6660,10 @@
       "labels": [
         {
           "text": "PE-12 uplink",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6684,10 +6684,10 @@
       "labels": [
         {
           "text": "DC-SW-01 core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6708,10 +6708,10 @@
       "labels": [
         {
           "text": "DC-SW-02 core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6732,10 +6732,10 @@
       "labels": [
         {
           "text": "DC-SW-03 core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6756,10 +6756,10 @@
       "labels": [
         {
           "text": "DC-SW-04 core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6780,10 +6780,10 @@
       "labels": [
         {
           "text": "DC-SW-05 core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6804,10 +6804,10 @@
       "labels": [
         {
           "text": "DC-SW-06 core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6828,10 +6828,10 @@
       "labels": [
         {
           "text": "RAN-01 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6852,10 +6852,10 @@
       "labels": [
         {
           "text": "RAN-02 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6876,10 +6876,10 @@
       "labels": [
         {
           "text": "RAN-03 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6900,10 +6900,10 @@
       "labels": [
         {
           "text": "RAN-04 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6924,10 +6924,10 @@
       "labels": [
         {
           "text": "RAN-05 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6948,10 +6948,10 @@
       "labels": [
         {
           "text": "RAN-06 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6972,10 +6972,10 @@
       "labels": [
         {
           "text": "RAN-07 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -6996,10 +6996,10 @@
       "labels": [
         {
           "text": "RAN-08 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7020,10 +7020,10 @@
       "labels": [
         {
           "text": "RAN-09 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7044,10 +7044,10 @@
       "labels": [
         {
           "text": "RAN-10 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7068,10 +7068,10 @@
       "labels": [
         {
           "text": "RAN-11 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7092,10 +7092,10 @@
       "labels": [
         {
           "text": "RAN-12 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7116,10 +7116,10 @@
       "labels": [
         {
           "text": "RAN-13 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7140,10 +7140,10 @@
       "labels": [
         {
           "text": "RAN-14 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7164,10 +7164,10 @@
       "labels": [
         {
           "text": "RAN-15 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7188,10 +7188,10 @@
       "labels": [
         {
           "text": "RAN-16 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7212,10 +7212,10 @@
       "labels": [
         {
           "text": "RAN-17 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7236,10 +7236,10 @@
       "labels": [
         {
           "text": "RAN-18 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7260,10 +7260,10 @@
       "labels": [
         {
           "text": "RAN-19 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7284,10 +7284,10 @@
       "labels": [
         {
           "text": "RAN-20 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7308,10 +7308,10 @@
       "labels": [
         {
           "text": "RAN-21 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7332,10 +7332,10 @@
       "labels": [
         {
           "text": "RAN-22 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7356,10 +7356,10 @@
       "labels": [
         {
           "text": "RAN-23 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7380,10 +7380,10 @@
       "labels": [
         {
           "text": "RAN-24 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7404,10 +7404,10 @@
       "labels": [
         {
           "text": "RAN-25 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7428,10 +7428,10 @@
       "labels": [
         {
           "text": "RAN-26 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7452,10 +7452,10 @@
       "labels": [
         {
           "text": "RAN-27 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7476,10 +7476,10 @@
       "labels": [
         {
           "text": "RAN-28 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7500,10 +7500,10 @@
       "labels": [
         {
           "text": "RAN-29 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7524,10 +7524,10 @@
       "labels": [
         {
           "text": "RAN-30 backhaul",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7548,10 +7548,10 @@
       "labels": [
         {
           "text": "SMALLCELL-01 to RAN-01",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7572,10 +7572,10 @@
       "labels": [
         {
           "text": "SMALLCELL-02 to RAN-02",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7596,10 +7596,10 @@
       "labels": [
         {
           "text": "SMALLCELL-03 to RAN-03",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7620,10 +7620,10 @@
       "labels": [
         {
           "text": "SMALLCELL-04 to RAN-04",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7644,10 +7644,10 @@
       "labels": [
         {
           "text": "SMALLCELL-05 to RAN-05",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7668,10 +7668,10 @@
       "labels": [
         {
           "text": "SMALLCELL-06 to RAN-06",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7692,10 +7692,10 @@
       "labels": [
         {
           "text": "SMALLCELL-07 to RAN-07",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7716,10 +7716,10 @@
       "labels": [
         {
           "text": "SMALLCELL-08 to RAN-08",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7740,10 +7740,10 @@
       "labels": [
         {
           "text": "SMALLCELL-09 to RAN-09",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7764,10 +7764,10 @@
       "labels": [
         {
           "text": "SMALLCELL-10 to RAN-10",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7788,10 +7788,10 @@
       "labels": [
         {
           "text": "CPE-01 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7812,10 +7812,10 @@
       "labels": [
         {
           "text": "CPE-02 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7836,10 +7836,10 @@
       "labels": [
         {
           "text": "CPE-03 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7860,10 +7860,10 @@
       "labels": [
         {
           "text": "CPE-04 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7884,10 +7884,10 @@
       "labels": [
         {
           "text": "CPE-05 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7908,10 +7908,10 @@
       "labels": [
         {
           "text": "CPE-06 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7932,10 +7932,10 @@
       "labels": [
         {
           "text": "CPE-07 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7956,10 +7956,10 @@
       "labels": [
         {
           "text": "CPE-08 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -7980,10 +7980,10 @@
       "labels": [
         {
           "text": "CPE-09 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8004,10 +8004,10 @@
       "labels": [
         {
           "text": "CPE-10 access",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8028,10 +8028,10 @@
       "labels": [
         {
           "text": "FIREWALL-01 inside",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8052,10 +8052,10 @@
       "labels": [
         {
           "text": "FIREWALL-01 outside",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8076,10 +8076,10 @@
       "labels": [
         {
           "text": "FIREWALL-02 inside",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8100,10 +8100,10 @@
       "labels": [
         {
           "text": "FIREWALL-02 outside",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8124,10 +8124,10 @@
       "labels": [
         {
           "text": "NMS to DB",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8148,10 +8148,10 @@
       "labels": [
         {
           "text": "NMS to LOG",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8172,10 +8172,10 @@
       "labels": [
         {
           "text": "LOG to AAA",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8196,10 +8196,10 @@
       "labels": [
         {
           "text": "DNS to Core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8220,10 +8220,10 @@
       "labels": [
         {
           "text": "Automation bus",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8244,10 +8244,10 @@
       "labels": [
         {
           "text": "Monitoring tap",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8268,10 +8268,10 @@
       "labels": [
         {
           "text": "Monitoring tap2",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
@@ -8292,10 +8292,10 @@
       "labels": [
         {
           "text": "VPN Hub to Core",
-          "width": 100.0,
-          "height": 10.0,
+          "width": 200.0,
+          "height": 8.0,
           "properties": {
-            "org.eclipse.elk.font.size": 10,
+            "org.eclipse.elk.font.size": 8,
             "org.eclipse.elk.edgeLabels.inline": false
           }
         }
