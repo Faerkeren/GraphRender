@@ -122,9 +122,9 @@ class ElkGraphSvg:
         if owner and owner in self.port_lookup:
             side = self.port_lookup[owner].get("side")
             if side == "WEST":
-                return "start"
-            if side == "EAST":
                 return "end"
+            if side == "EAST":
+                return "start"
         return "middle"
 
     def _partition_labels(self) -> Dict[str, Dict[str, List[Dict]]]:

@@ -107,54 +107,9 @@ svg {
   fill: var(--c-edge-stroke);
 }
 
-#nodes .node.router > rect {
-  fill: var(--c-group-10-primary);
-}
-#nodes .node.router > g.icon {
-  color: var(--c-group-10-secondary);
-}
-#nodes .node.router > .labels > text {
-  fill: var(--c-text);
-}
-#nodes .node.router > .ports > .port > .labels text {
-  fill: var(--c-text);
-}
-
-#nodes .node.switch > rect {
-  fill: var(--c-group-2-primary);
-}
-#nodes .node.switch > g.icon {
-  color: var(--c-group-2-secondary);
-}
-#nodes .node.switch > .labels > text {
-  fill: var(--c-text);
-}
-#nodes .node.switch > .ports > .port > .labels text {
-  fill: var(--c-text);
-}
-
-#nodes .node.server > rect {
-  fill: var(--c-group-3-primary);
-}
-#nodes .node.server > g.icon {
-  color: var(--c-group-3-secondary);
-}
-#nodes .node.server > .labels > text {
-  fill: var(--c-text);
-}
-#nodes .node.server > .ports > .port > .labels text {
-  fill: var(--c-text);
-}
-
-#nodes .node.firewall > rect {
-  fill: var(--c-group-4-primary);
-}
-#nodes .node.firewall > g.icon {
-  color: var(--c-group-4-secondary);
-}
-#nodes .node.firewall > .labels > text {
-  fill: var(--c-text);
-}
-#nodes .node.firewall > .ports > .port > .labels text {
-  fill: var(--c-text);
-}
+/*
+@include add_node_group("router", 10);
+@include add_node_group("switch", 2);
+@include add_node_group("server", 3);
+@include add_node_group("firewall", 4);
+*/
