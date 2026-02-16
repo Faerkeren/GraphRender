@@ -10,6 +10,8 @@ examples/*.svg
 
 .vscode/
 
+output/*
+
 .DS_Store
 # Distribution / packaging
 .Python

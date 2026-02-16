@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 
-from graphrender import ElkGraphSvg
+from graphrender import GraphRender
 
 
 def load_theme_css(theme_path: Path) -> str:
@@ -80,7 +80,7 @@ def main(argv: list[str] | None = None) -> None:
             raise FileNotFoundError(f"Theme file not found: {theme_path}")
         theme_css = load_theme_css(theme_path)
 
-    graph = ElkGraphSvg.from_file(
+    graph = GraphRender.from_file(
         input_path,
         embed_theme=not args.no_theme,
         theme_css=theme_css,

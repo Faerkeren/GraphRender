@@ -31,7 +31,7 @@ Point = Tuple[Number, Number]
 ET.register_namespace("", "http://www.w3.org/2000/svg")
 
 
-class ElkGraphSvg:
+class GraphRender:
     """Convert ELK JSON to svg.py structures."""
 
     def __init__(
@@ -494,13 +494,13 @@ class ElkGraphSvg:
     # Constructors
     # ------------------------------------------------------------------ #
     @classmethod
-    def from_file(cls, path: str | Path, **kwargs) -> "ElkGraphSvg":
+    def from_file(cls, path: str | Path, **kwargs) -> "GraphRender":
         """Load ELK JSON from a file."""
         data = json.loads(Path(path).read_text())
         return cls(data, **kwargs)
 
     @classmethod
-    def from_json(cls, json_str: str, **kwargs) -> "ElkGraphSvg":
+    def from_json(cls, json_str: str, **kwargs) -> "GraphRender":
         """Load ELK JSON from a JSON string."""
         data = json.loads(json_str)
         return cls(data, **kwargs)
@@ -1169,4 +1169,4 @@ class ElkGraphSvg:
         }
 
 
-__all__ = ["ElkGraphSvg"]
+__all__ = ["GraphRender"]

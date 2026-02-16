@@ -1,13 +1,13 @@
 """
 GraphRender package initialization.
-Exports the ElkGraphSvg converter and resource helpers.
+Exports the GraphRender converter and resource helpers.
 """
 
-from .elk_graph_svg import ElkGraphSvg
+from .graphrender import GraphRender
 
 from .resources import default_theme_css
 
 __all__ = [
-    "ElkGraphSvg",
+    "GraphRender",
     "default_theme_css",
 ]
