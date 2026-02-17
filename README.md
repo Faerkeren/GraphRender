@@ -5,62 +5,50 @@
 [![Tests](https://github.com/Faerkeren/GraphRender/actions/workflows/test.yml/badge.svg)](https://github.com/Faerkeren/GraphRender/actions/workflows/test.yml)
 [![Secret Scan](https://github.com/Faerkeren/GraphRender/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/Faerkeren/GraphRender/actions/workflows/gitleaks.yml)
 
-GraphRender converts **laid-out ELK JSON** into styled SVG diagrams.
+GraphRender converts laid-out ELK JSON into styled SVG diagrams.
 
-It is intended for pipelines where layout is already computed (for example by Eclipse Layout Kernel), and you want reliable SVG rendering with optional theming and icon support.
+It is intended for pipelines where layout is already computed and rendering must be deterministic, inspectable, and themeable.
 
 ## Features
 
 - Render nodes, ports, edges, and labels from ELK layout output
 - Support nested/compound graphs with coordinate normalization
-- Style via embedded CSS, or custom CSS/SCSS/SASS themes
-- Optional Iconify icon rendering for nodes with persistent disk cache
-- Pretty-formatted SVG output for readable diffs and manual inspection
+- Style output with embedded CSS or custom CSS/SCSS/SASS themes
+- Optional Iconify icon rendering with persistent disk cache
+- Pretty-formatted SVG output for readable diffs
 
 ## Requirements
 
 - Python `>=3.10`
-- `svg.py >= 1.0`
-- Optional: Dart Sass CLI (`sass`) if using `.scss` / `.sass` themes
+- `svg.py>=1.0`
+- Optional: Dart Sass CLI (`sass`) for `.scss` / `.sass` themes
 
 ## Installation
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install -e .
+python -m pip install --upgrade pip
+python -m pip install -e .
 ```
 
 ## Quick Start
 
-Render an ELK JSON file:
-
 ```bash
-python3 main.py examples/input.json -o output/output.svg
-```
+# Render an ELK JSON file
+python main.py examples/input.json -o output/output.svg
 
-Use a custom theme:
+# Render with a custom theme
+python main.py examples/input.json --theme themes/theme.scss -o output/custom-theme.svg
 
-```bash
-python3 main.py examples/input.json --theme themes/theme.scss -o output/custom-theme.svg
-```
-
-Use bundled default theme explicitly:
-
-```bash
-python3 main.py examples/input.json --theme src/graphrender/resources/default_theme.css -o output/default-theme.svg
-```
-
-Disable embedded theme completely:
-
-```bash
-python3 main.py examples/input.json --no-theme -o output/no-theme.svg
+# Disable embedded theme
+python main.py examples/input.json --no-theme -o output/no-theme.svg
 ```
 
 ## CLI Reference
 
 ```bash
-python3 main.py <layout.json> [-o output.svg] [--theme theme.css|theme.scss|theme.sass] [--no-theme]
+python main.py <layout.json> [-o output.svg] [--theme theme.css|theme.scss|theme.sass] [--no-theme]
 ```
 
 - `<layout.json>`: ELK output JSON with resolved coordinates
@@ -76,43 +64,43 @@ from graphrender import GraphRender
 renderer = GraphRender.from_file(
     "examples/input.json",
     embed_theme=True,
-    theme_css=None,  # Or pass your CSS string directly
+    theme_css=None,
 )
 
-renderer.write("output/output.svg")  # pretty=True by default
-svg_text = renderer.to_string()      # pretty formatted XML
+renderer.write("output/output.svg")
+svg_text = renderer.to_string()
 ```
 
-### Main constructor options
+Main constructor options:
 
-- `padding`: canvas padding around rendered graph
-- `node_style`: default node shape style overrides
-- `port_style`: default port style overrides
-- `edge_style`: default edge style overrides
-- `font_size`: fallback label font size
-- `embed_theme`: whether to include `<style>` in SVG
-- `theme_css`: explicit CSS string to embed
+- `padding`
+- `node_style`
+- `port_style`
+- `edge_style`
+- `font_size`
+- `embed_theme`
+- `theme_css`
 
 ## Input Expectations
 
-GraphRender assumes **layout is already done**.
+GraphRender assumes layout is already done.
 
 Typical input includes:
 
-- root graph dimensions (`width`, `height`) or resolvable node extents
+- root dimensions (`width`, `height`) or resolvable node extents
 - `children` with node geometry (`x`, `y`, `width`, `height`)
 - `ports` and optional `labels`
-- `edges` with `sections` (or source/target ports for fallback)
+- `edges` with routed `sections` (or source/target ports for fallback)
 
 ## Icon Support and Cache
 
-If a node has an `icon` value (Iconify name like `mdi:router`), GraphRender fetches icon SVGs from Iconify and reuses them via `<defs>/<use>`.
+If a node has an `icon` value (Iconify name like `mdi:router`), GraphRender fetches icon SVGs and reuses them via `<defs>/<use>`.
 
 Caching behavior:
 
 - In-memory cache for the current render process
 - Persistent disk cache across runs
-- Corrupted cache entries are auto-healed (deleted and re-fetched)
+- Corrupted cache entries are auto-healed (deleted and fetched again)
 
 Configure cache location with:
 
@@ -120,66 +108,53 @@ Configure cache location with:
 export GRAPHRENDER_ICON_CACHE_DIR=/path/to/cache
 ```
 
-If unset, defaults to platform cache locations (for example `~/.cache/graphrender/icons` on Linux/macOS).
+If unset, GraphRender uses platform cache locations (for example `~/.cache/graphrender/icons` on Linux/macOS).
 
-Set it to an empty string to disable disk caching.
+Set `GRAPHRENDER_ICON_CACHE_DIR` to an empty string to disable disk caching.
 
 ## Theming Notes
 
 - `.css` themes are embedded directly
-- `.scss` / `.sass` themes are compiled using the `sass` CLI
-- Theme variables and selectors are in:
+- `.scss` / `.sass` themes are compiled with the `sass` CLI
+- Theme sources:
   - `themes/_variables.scss`
   - `themes/theme.scss`
-  - `src/graphrender/resources/default_theme.css` (bundled compiled/default theme)
+  - `src/graphrender/resources/default_theme.css`
 
 ## Troubleshooting
 
-### `SCSS/SASS theme
-
-compilation requires the sass CLI in PATH`
+### `SCSS/SASS theme compilation requires the sass CLI in PATH`
 
 Install Dart Sass and ensure `sass` is available in your shell.
 
 ### Missing icons
 
-- Confirm outbound network access to Iconify API
-- Check cache dir permissions
-- Retry render; invalid cache entries are auto-repaired
+- Confirm outbound access to Iconify API
+- Check cache directory permissions
+- Retry rendering; invalid cache entries are automatically repaired
 
 ### `python` command fails with syntax errors
 
-Use `python3` explicitly (recommended in all examples).
+Use `python3` explicitly.
 
 ## Development
 
-Run a local sanity check:
-
 ```bash
-.venv/bin/python -m py_compile main.py src/graphrender/__init__.py src/graphrender/graphrender.py
-.venv/bin/python main.py examples/input.json -o /tmp/graphrender-check.svg
+python -m pytest -q
+python -m py_compile main.py src/graphrender/__init__.py src/graphrender/graphrender.py src/graphrender/resources/__init__.py
+python main.py examples/input.json -o /tmp/graphrender-check.svg
 ```
 
 ## Project Layout
 
 ```text
-main.py                          # CLI entry point
-src/graphrender/graphrender.py   # Core renderer
-src/graphrender/resources/       # Bundled theme/assets
-themes/                          # SCSS theme source
-examples/                        # Example ELK input/output
+main.py                               # CLI entrypoint
+src/graphrender/graphrender.py        # Core renderer
+src/graphrender/resources/            # Bundled theme/resources
+themes/                               # SCSS theme source
+examples/                             # Example ELK input
+tests/                                # Pytest suite
 ```
-
-## Acknowledgements
-
-- Eclipse Layout Kernel (ELK) for graph layout modeling and options
-- `svg.py` for Python SVG element construction
-- Iconify for icon assets and API-based SVG retrieval
-- Dart Sass for SCSS/SASS theme compilation support
-
-## Third-Party Notices
-
-See `THIRD_PARTY_NOTICES.md` for dependency, tool, service, and icon set license notices.
 
 ## Governance and Community
 
@@ -192,6 +167,22 @@ See `THIRD_PARTY_NOTICES.md` for dependency, tool, service, and icon set license
 ## Automation
 
 - CI build and sanity checks: `.github/workflows/ci.yml`
-- Test matrix: `.github/workflows/test.yml`
+- Test matrix + coverage gate: `.github/workflows/test.yml`
 - Secret scanning (gitleaks): `.github/workflows/gitleaks.yml`
-- Dependency updates (Dependabot): `.github/dependabot.yml`
+- Tagged releases: `.github/workflows/release.yml`
+- Dependency updates: `.github/dependabot.yml`
+
+## Acknowledgements
+
+- Eclipse Layout Kernel (ELK) for graph layout modeling and options
+- `svg.py` for Python SVG element construction
+- Iconify for icon assets and API-based SVG retrieval
+- Dart Sass for SCSS/SASS theme compilation support
+
+## Third-Party Notices
+
+See `THIRD_PARTY_NOTICES.md` for dependency, service, and icon-set license notices.
+
+## License
+
+GraphRender is licensed under Apache License 2.0. See `LICENSE`.

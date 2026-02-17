@@ -2,20 +2,20 @@
 
 ## Supported Versions
 
-Security fixes are provided for the latest code on the `main` branch and the most recent tagged release.
+Security fixes are provided for:
+
+- `main` branch (latest commit)
+- Most recent tagged release
 
 Older commits, forks, and unpublished local builds are not guaranteed to receive fixes.
 
 ## Reporting a Vulnerability
 
-Do not open a public issue for a security vulnerability.
+Do not open a public issue for security vulnerabilities.
 
 Use GitHub Private Vulnerability Reporting:
 
-1. Open the repository on GitHub.
-2. Go to `Security`.
-3. Choose `Report a vulnerability`.
-4. Provide a clear report with reproduction details.
+- https://github.com/Faerkeren/GraphRender/security/advisories/new
 
 Include as much detail as possible:
 
@@ -32,7 +32,7 @@ Include as much detail as possible:
 
 ## Disclosure Policy
 
-Please coordinate disclosure with maintainers.
+Coordinate disclosure with maintainers.
 
 Public disclosure should wait until:
 
