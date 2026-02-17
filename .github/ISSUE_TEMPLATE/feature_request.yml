@@ -1,5 +1,6 @@
 name: Feature request
 description: Propose an enhancement
+title: "[Feature]: "
 labels: [enhancement]
 body:
   - type: markdown
@@ -20,7 +21,7 @@ body:
     id: proposal
     attributes:
       label: Proposed solution
-      description: Describe the behavior/API you would like
+      description: Describe the behavior or API you would like
     validations:
       required: true
 

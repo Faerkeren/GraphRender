@@ -16,13 +16,19 @@ python -m pip install -e ".[dev]"
 Run tests:
 
 ```bash
-python -m pytest
+python -m pytest -q
 ```
 
-Run compile sanity check:
+Run compile sanity checks:
 
 ```bash
-python -m py_compile main.py src/graphrender/__init__.py src/graphrender/graphrender.py
+python -m py_compile main.py src/graphrender/__init__.py src/graphrender/graphrender.py src/graphrender/resources/__init__.py
+```
+
+Run a CLI smoke check:
+
+```bash
+python main.py examples/input.json -o /tmp/graphrender-check.svg
 ```
 
 ## Project Structure
@@ -30,7 +36,8 @@ python -m py_compile main.py src/graphrender/__init__.py src/graphrender/graphre
 - `src/graphrender/`: library code
 - `main.py`: CLI entrypoint
 - `tests/`: pytest suite
-- `.github/workflows/`: CI and security workflows
+- `themes/`: SCSS theme source files
+- `.github/workflows/`: CI, tests, release, and secret scanning
 
 ## Pull Requests
 
@@ -38,12 +45,13 @@ Before opening a PR:
 
 1. Keep changes focused and atomic.
 2. Add or update tests for behavioral changes.
-3. Update docs (`README.md`, `THIRD_PARTY_NOTICES.md`, `CHANGELOG.md`) when relevant.
-4. Ensure CI is green.
+3. Update docs (`README.md`, `CHANGELOG.md`, `THIRD_PARTY_NOTICES.md`) when relevant.
+4. Ensure workflows are green (`CI`, `Tests`, `Gitleaks`).
 
 ## Commit Guidance
 
 - Use clear, imperative commit messages.
+- Prefer conventional prefixes (`feat`, `fix`, `docs`, `test`, `chore`).
 - Reference issue numbers when applicable.
 - Avoid bundling unrelated changes in one PR.
 

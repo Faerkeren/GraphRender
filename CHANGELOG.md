@@ -9,10 +9,10 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ### Added
 
-- GitHub Actions workflows for CI, test matrix, and gitleaks secret scanning.
-- Comprehensive pytest suite covering core rendering logic, SVG output, icon caching, resources, and CLI behavior.
-- Third-party notices documentation.
-- Project governance docs: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, issue templates, PR template, and CODEOWNERS.
+- Coverage-gated test workflow aligned with GraphLoom for predictable quality checks.
+- Automated tag-based release workflow.
+- Standardized repository governance templates (`CONTRIBUTING`, `SECURITY`, release process, issue/PR templates).
+- README structure aligned with GraphLoom for consistent documentation flow.
 
 ## [0.1.0] - 2026-02-16
 
