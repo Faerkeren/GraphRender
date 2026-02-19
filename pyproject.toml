@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "GraphRender"
 version = "0.1.0"
-description = "Render laid-out ELK JSON graphs to SVG with optional CSS/SCSS/SASS theming."
+description = "Converts laid-out ELK JSON into structured SVG"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
@@ -30,10 +30,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Faerkeren/GraphRender"
-Repository = "https://github.com/Faerkeren/GraphRender"
-Issues = "https://github.com/Faerkeren/GraphRender/issues"
-Changelog = "https://github.com/Faerkeren/GraphRender/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/GraphRapids/GraphRender"
+Repository = "https://github.com/GraphRapids/GraphRender"
+Issues = "https://github.com/GraphRapids/GraphRender/issues"
+Changelog = "https://github.com/GraphRapids/GraphRender/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = [
@@ -50,6 +50,9 @@ where = ["src"]
 graphrender = [
     "resources/*",
 ]
+
+[project.scripts]
+graphrender = "graphrender.__main__:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
