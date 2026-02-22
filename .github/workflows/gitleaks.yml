@@ -1,13 +1,7 @@
 name: Secret Scan (Gitleaks)
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: "0 4 * * *"
 
 permissions:
   contents: read
@@ -18,16 +12,5 @@ concurrency:
 
 jobs:
   scan:
-    name: Gitleaks
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Run gitleaks
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: GraphRapids/python-workflow-standards/.github/workflows/python-gitleaks.yml@main
+    secrets: inherit

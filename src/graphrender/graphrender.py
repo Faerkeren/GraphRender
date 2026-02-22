@@ -45,12 +45,14 @@ class GraphRender:
         font_size: Number = 12,
         embed_theme: bool = True,
         theme_css: Optional[str] = None,
+        theme_id: str = "default",
     ) -> None:
         self.graph = graph
         self.padding = padding
         self.font_size = font_size
         self.embed_theme = embed_theme
         self.theme_css = theme_css
+        self.theme_id = theme_id
 
         self.node_style = {
             "fill": "lightblue",
@@ -541,7 +543,11 @@ class GraphRender:
         if not self.embed_theme:
             return None
 
-        css_text = self.theme_css if self.theme_css is not None else default_theme_css()
+        css_text = (
+            self.theme_css
+            if self.theme_css is not None
+            else default_theme_css(self.theme_id)
+        )
         if not css_text:
             return None
 
