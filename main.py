@@ -9,7 +9,6 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from graphrender import GraphRender
 
-
 def load_theme_css(theme_path: Path) -> str:
     """Load CSS directly or compile SCSS/SASS to CSS via the `sass` CLI."""
     suffix = theme_path.suffix.lower()
