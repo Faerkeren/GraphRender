@@ -208,3 +208,34 @@ def test_build_icon_defs_deduplicates_identical_icons(monkeypatch):
 
     assert len(defs) == 1
     assert renderer._icon_def_id("mdi:router") == "icon-mdi-router"
+
+
+def test_fetch_icon_svg_rejects_invalid_icon_names_without_network(monkeypatch):
+    monkeypatch.setattr(
+        renderer_module,
+        "urlopen",
+        lambda *args, **kwargs: (_ for _ in ()).throw(AssertionError("network should not be used")),
+    )
+    renderer = GraphRender(minimal_graph(), embed_theme=False)
+
+    assert renderer._fetch_icon_svg("mdi:router<script>") is None
+    assert renderer._fetch_icon_svg("bad icon") is None
+
+
+def test_build_icon_defs_skips_invalid_icon_names(monkeypatch):
+    graph = {
+        "id": "root",
+        "width": 80,
+        "height": 60,
+        "children": [
+            {"id": "n1", "x": 10, "y": 10, "width": 24, "height": 24, "icon": "mdi:router"},
+            {"id": "n2", "x": 40, "y": 10, "width": 24, "height": 24, "icon": "bad icon"},
+        ],
+        "edges": [],
+    }
+    monkeypatch.setattr(GraphRender, "_icon_geometry", lambda self, icon_name: ("<path d='M0 0h1v1H0z'/>", 1.0, 1.0))
+
+    renderer = GraphRender(graph, embed_theme=False)
+    defs = renderer._build_icon_defs()
+
+    assert len(defs) == 1

@@ -30,6 +30,9 @@ Number = float | int
 Point = Tuple[Number, Number]
 
 ET.register_namespace("", "http://www.w3.org/2000/svg")
+ICONIFY_NAME_PATTERN = re.compile(
+    r"^[a-z0-9]+(?:-[a-z0-9]+)*:[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+)
 
 
 class GraphRender:
@@ -308,8 +311,22 @@ class GraphRender:
         except OSError:
             return
 
+    def _normalize_icon_name(self, icon_name: str) -> Optional[str]:
+        normalized = str(icon_name or "").strip().lower()
+        if not normalized:
+            return None
+        if not ICONIFY_NAME_PATTERN.fullmatch(normalized):
+            return None
+        return normalized
+
     def _fetch_icon_svg(self, icon_name: str) -> Optional[str]:
         """Load Iconify SVG from memory, then disk cache, then network."""
+        normalized_name = self._normalize_icon_name(icon_name)
+        if normalized_name is None:
+            self._icon_cache[icon_name] = None
+            return None
+        icon_name = normalized_name
+
         if icon_name in self._icon_cache:
             return self._icon_cache[icon_name]
 
@@ -869,10 +886,9 @@ class GraphRender:
         seen: set[str] = set()
 
         for node in self.nodes:
-            icon_name = node["raw"].get("icon")
+            icon_name = self._normalize_icon_name(str(node["raw"].get("icon") or ""))
             if not icon_name:
                 continue
-            icon_name = str(icon_name)
             if icon_name in seen:
                 continue
             seen.add(icon_name)
@@ -937,9 +953,9 @@ class GraphRender:
             node_group.elements.append(rect)
 
             # Centered icon (if provided via node["raw"]["icon"]).
-            icon_name = node["raw"].get("icon")
+            icon_name = self._normalize_icon_name(str(node["raw"].get("icon") or ""))
             if icon_name:
-                icon_el = self._icon_element(str(icon_name), node)
+                icon_el = self._icon_element(icon_name, node)
                 if icon_el:
                     node_group.elements.append(icon_el)
 
