@@ -15,6 +15,28 @@ Use this file as a running log between work sessions.
 ## Current
 
 ### 2026-02-26
+- Summary: Removed external theme package dependency and made theme resolution self-contained.
+- Changes:
+  - Updated `default_theme_css()` to serve bundled default CSS only.
+  - Removed CLI compatibility args tied to older theme-id workflows.
+  - Removed optional theme package dependency from `pyproject.toml`.
+  - Updated tests for theme-css-only invocation paths.
+- Files touched:
+  - `src/graphrender/resources/__init__.py`
+  - `main.py`
+  - `tests/test_resources.py`
+  - `tests/test_cli_main.py`
+  - `pyproject.toml`
+  - `README.md`
+  - `PROJECT_CONTEXT.md`
+  - `SESSION_NOTES.md`
+- Tests run:
+  - Pending.
+- Known issues: none.
+- Next steps:
+  - Validate dependent services (GraphAPI) continue passing profile-driven CSS correctly.
+
+### 2026-02-26
 - Summary: Added GraphAPI profile bundle adapter support and deterministic CSS class token normalization.
 - Changes:
   - Added `src/graphrender/profile.py` with profile bundle validation and render kwargs helpers.

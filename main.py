@@ -53,11 +53,6 @@ def main(argv: list[str] | None = None) -> None:
         help="Theme file path (.css, .scss, or .sass). Defaults to bundled theme.",
     )
     parser.add_argument(
-        "--theme-id",
-        default="default",
-        help="Theme id from GraphTheme (ignored when --theme is provided).",
-    )
-    parser.add_argument(
         "--no-theme",
         action="store_true",
         help="Disable embedding theme CSS into the SVG.",
@@ -88,7 +83,6 @@ def main(argv: list[str] | None = None) -> None:
         input_path,
         embed_theme=not args.no_theme,
         theme_css=theme_css,
-        theme_id=args.theme_id,
     )
     graph.write(output_path)
     print(f"Rendered: {output_path}")

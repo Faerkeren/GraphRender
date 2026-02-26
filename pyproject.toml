@@ -39,9 +39,6 @@ Changelog = "https://github.com/GraphRapids/GraphRender/blob/main/CHANGELOG.md"
 dev = [
     "pytest>=8.0",
 ]
-themes = [
-    "GraphTheme>=0.1.0",
-]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

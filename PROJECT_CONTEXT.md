@@ -49,7 +49,7 @@ Configuration:
 ## Integration Notes
 - Upstream layout provider: GraphLoom.
 - Service integration: GraphAPI.
-- Canonical theme source: GraphTheme.
+- Canonical style source: GraphAPI profile `renderCss` bundles or explicit `--theme` files.
 - Class token normalization keeps `node.type` / `edge.type` CSS behavior stable.
 
 ## Testing Expectations
@@ -60,7 +60,7 @@ Configuration:
 ## Open Decisions / TODO
 - [ ] Add golden snapshot coverage for nested graph and edge-label cases.
 - [ ] Add stress tests for icon cache corruption/recovery paths.
-- [ ] Formalize theme compatibility/version checks against GraphTheme metadata.
+- [ ] Consider strict validation for profile CSS size/complexity limits.
 
 ## How To Maintain This File
 - Update after changes to rendering behavior, theme pipeline, or icon strategy.

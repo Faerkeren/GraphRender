@@ -123,7 +123,7 @@ def test_main_uses_default_output_and_theme_settings(monkeypatch, tmp_path, caps
 
     args, kwargs = StubGraphRender.calls[0]
     assert Path(args[0]) == input_path
-    assert kwargs == {"embed_theme": True, "theme_css": None, "theme_id": "default"}
+    assert kwargs == {"embed_theme": True, "theme_css": None}
     assert StubGraphRender.renderer.writes == [tmp_path / "graph.svg"]
     assert f"Rendered: {tmp_path / 'graph.svg'}" in capsys.readouterr().out
 
@@ -140,7 +140,6 @@ def test_main_respects_no_theme_flag(monkeypatch, tmp_path):
     _, kwargs = StubGraphRender.calls[0]
     assert kwargs["embed_theme"] is False
     assert kwargs["theme_css"] is None
-    assert kwargs["theme_id"] == "default"
 
 
 def test_main_loads_theme_css_and_passes_to_renderer(monkeypatch, tmp_path):
@@ -157,7 +156,6 @@ def test_main_loads_theme_css_and_passes_to_renderer(monkeypatch, tmp_path):
     _, kwargs = StubGraphRender.calls[0]
     assert kwargs["embed_theme"] is True
     assert kwargs["theme_css"] == "svg{stroke:red;}"
-    assert kwargs["theme_id"] == "default"
 
 
 def test_main_resolves_relative_paths_against_root(monkeypatch, tmp_path):
@@ -175,18 +173,4 @@ def test_main_resolves_relative_paths_against_root(monkeypatch, tmp_path):
     args, kwargs = StubGraphRender.calls[0]
     assert Path(args[0]) == input_path
     assert kwargs["theme_css"] == "svg{fill:blue;}"
-    assert kwargs["theme_id"] == "default"
     assert StubGraphRender.renderer.writes == [tmp_path / "out" / "rendered.svg"]
-
-
-def test_main_passes_theme_id_to_renderer(monkeypatch, tmp_path):
-    input_path = tmp_path / "graph.json"
-    write_input(input_path)
-
-    monkeypatch.setattr(cli_main, "GraphRender", StubGraphRender)
-    StubGraphRender.reset()
-
-    cli_main.main([str(input_path), "--theme-id", "enterprise"])
-
-    _, kwargs = StubGraphRender.calls[0]
-    assert kwargs["theme_id"] == "enterprise"

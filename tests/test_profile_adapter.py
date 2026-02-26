@@ -48,7 +48,6 @@ def test_render_kwargs_from_profile_bundle_are_graph_render_ready() -> None:
     assert kwargs == {
         'theme_css': '.node.router > rect { fill: red; }',
         'embed_theme': True,
-        'theme_id': 'default',
     }
 
 

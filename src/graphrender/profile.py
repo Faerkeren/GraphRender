@@ -51,5 +51,4 @@ def render_kwargs_from_profile_bundle(bundle: Mapping[str, Any]) -> dict[str, An
     return {
         "theme_css": resolved.render_css,
         "embed_theme": True,
-        "theme_id": "default",
     }
