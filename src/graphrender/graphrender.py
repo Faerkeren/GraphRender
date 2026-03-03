@@ -854,20 +854,24 @@ class GraphRender:
 
         dependency_open_arrow = svg.Marker(
             id="arrow-open-dependency",
-            markerWidth=7,
-            markerHeight=7,
-            refX=6,
-            refY=3.5,
+            markerWidth=10,
+            markerHeight=10,
+            refX=7,
+            refY=5,
             orient="auto",
             markerUnits="strokeWidth",
             elements=[
                 svg.Path(
-                    d=[svg.MoveTo(0.75, 0.75), svg.LineTo(6, 3.5), svg.LineTo(0.75, 6.25)],
+                    d=[
+                        svg.MoveTo(1.25, 1.75),
+                        svg.LineTo(7, 5),
+                        svg.LineTo(1.25, 8.25),
+                    ],
                     fill="none",
                     stroke="currentColor",
                     stroke_width=1,
-                    stroke_linecap="round",
-                    stroke_linejoin="round",
+                    stroke_linecap="butt",
+                    stroke_linejoin="miter",
                     stroke_dasharray="none",
                 )
             ],

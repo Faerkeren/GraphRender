@@ -204,8 +204,8 @@ def test_dependency_marker_is_smaller_and_solid():
 
     assert marker is not None
     assert marker.get("markerUnits") == "strokeWidth"
-    assert marker.get("markerWidth") == "7"
-    assert marker.get("markerHeight") == "7"
+    assert marker.get("markerWidth") == "10"
+    assert marker.get("markerHeight") == "10"
 
     marker_path = marker.find("./svg:path", SVG_NS)
 
@@ -213,8 +213,8 @@ def test_dependency_marker_is_smaller_and_solid():
     assert marker_path.get("stroke-dasharray") == "none"
     assert marker_path.get("stroke") == "currentColor"
     assert marker_path.get("stroke-width") == "1"
-    assert marker_path.get("stroke-linecap") == "round"
-    assert marker_path.get("stroke-linejoin") == "round"
+    assert marker_path.get("stroke-linecap") == "butt"
+    assert marker_path.get("stroke-linejoin") == "miter"
 
 
 def test_triangle_hollow_marker_uses_current_color_and_no_fill():
