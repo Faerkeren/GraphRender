@@ -829,7 +829,7 @@ class GraphRender:
                         svg.LineTo(2, 5),
                         svg.Z(),
                     ],
-                    fill=self.edge_style["stroke"],
+                    fill="currentColor",
                 )
             ],
         )
