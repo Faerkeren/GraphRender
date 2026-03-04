@@ -217,6 +217,17 @@ def test_dependency_marker_is_smaller_and_solid():
     assert marker_path.get("stroke-linejoin") == "miter"
 
 
+def test_filled_arrow_marker_tip_is_anchored_at_edge_endpoint():
+    renderer = GraphRender(base_graph(), embed_theme=False)
+    root = parse_svg(renderer.to_string())
+
+    marker = root.find(".//svg:marker[@id='arrow']", SVG_NS)
+
+    assert marker is not None
+    assert marker.get("refX") == "10"
+    assert marker.get("refY") == "5"
+
+
 def test_triangle_hollow_marker_uses_current_color_and_no_fill():
     renderer = GraphRender(base_graph(), embed_theme=False)
     root = parse_svg(renderer.to_string())

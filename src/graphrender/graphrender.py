@@ -816,7 +816,7 @@ class GraphRender:
             id="arrow",
             markerWidth=10,
             markerHeight=10,
-            refX=5,
+            refX=10,
             refY=5,
             orient="auto",
             markerUnits="strokeWidth",
