@@ -1,5 +1,25 @@
 # Changelog
 
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [Unreleased]
+
+### Added
+- Dockerfile with multi-stage build exposing port 8080 and a built-in HEALTHCHECK instruction.
+- docker-compose.yml defining the `graph-render` service with health check configuration.
+- `GET /health` endpoint returning HTTP 200 with `{"status": "ok"}` (application/json).
+- Integration test scaffolding in `tests/integration/` (health check and render smoke tests).
+- ADRs: `docs/adr/001-health-check-contract.md` and `docs/adr/002-docker-integration-testing.md`.
+- README sections: Docker (build, run, health check), Integration Testing (step-by-step), and Testing.
+
+### Fixed
+- Restored README sections that were dropped in previous iterations: Automation (with workflow file paths), Contributing, Security, Governance, Third-Party Notices, and License.
+
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
