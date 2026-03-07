@@ -133,79 +133,85 @@ export GRAPHRENDER_ICON_CACHE_DIR=/path/to/cache
 
 If unset, GraphRender uses platform cache locations (for example `~/.cache/graphrender/icons` on Linux/macOS).
 
-Set `GRAPHRENDER_ICON_CACHE_DIR` to an empty string to disable disk caching.
+Set `GRAPHRENDER_ICON_CACHE_DIR` to an empty string to disable persistent disk caching entirely.
 
-## Theming Notes
+## HTTP Server
 
-- `.css` themes are embedded directly
-- `.scss` / `.sass` themes are compiled with the `sass` CLI
-- Theme sources:
-  - `themes/_variables.scss`
-  - `themes/theme.scss`
-  - `src/graphrender/resources/default_theme.css`
-
-## Troubleshooting
-
-### `SCSS/SASS theme compilation requires the sass CLI in PATH`
-
-Install Dart Sass and ensure `sass` is available in your shell.
-
-### Missing icons
-
-- Confirm outbound access to Iconify API
-- Check cache directory permissions
-- Retry rendering; invalid cache entries are automatically repaired
-
-### `python` command fails with syntax errors
-
-Use `python3` explicitly.
-
-## Development
+GraphRender includes a lightweight HTTP server for service-oriented deployments:
 
 ```bash
-python -m pytest -q
-python -m py_compile main.py src/graphrender/__init__.py src/graphrender/graphrender.py src/graphrender/resources/__init__.py
-python main.py examples/input.json -o /tmp/graphrender-check.svg
+python -m graphrender.server
 ```
 
-## Project Layout
+The server exposes:
 
-```text
-main.py                               # CLI entrypoint
-src/graphrender/graphrender.py        # Core renderer
-src/graphrender/resources/            # Bundled theme/resources
-themes/                               # SCSS theme source
-examples/                             # Example ELK input
-tests/                                # Pytest suite
+- `GET /health` — returns `{"status": "ok"}` (HTTP 200)
+- `POST /render` — accepts ELK JSON body, returns SVG
+
+Default port: **8080**. Override with `--port`:
+
+```bash
+python -m graphrender.server --port 9090
 ```
 
-## Governance and Community
+## Docker
 
-- Security policy: `SECURITY.md`
-- Contribution guide: `CONTRIBUTING.md`
-- Code of conduct: `CODE_OF_CONDUCT.md`
-- Changelog: `CHANGELOG.md`
-- Release process: `RELEASE.md`
+Build and run the GraphRender service image:
 
-## Automation
+```bash
+docker build -t graph-render .
+docker run -p 8080:8080 graph-render
+```
 
-- CI build and sanity checks: `.github/workflows/ci.yml`
-- Test matrix + coverage gate: `.github/workflows/test.yml`
-- Secret scanning (gitleaks): `.github/workflows/gitleaks.yml`
-- Tagged releases: `.github/workflows/release.yml`
-- Dependency updates: `.github/dependabot.yml`
+The Dockerfile uses a multi-stage build. The final image contains only the installed Python package and its runtime dependencies.
 
-## Acknowledgements
+Exposed port: **8080**
 
-- Eclipse Layout Kernel (ELK) for graph layout modeling and options
-- `svg.py` for Python SVG element construction
-- Iconify for icon assets and API-based SVG retrieval
-- Dart Sass for SCSS/SASS theme compilation support
+## Integration Testing
 
-## Third-Party Notices
+Integration tests verify GraphRender against a live service instance. They live in `tests/integration/` and are **not** executed by the default `pytest` command.
 
-See `THIRD_PARTY_NOTICES.md` for dependency, service, and icon-set license notices.
+### Prerequisites
 
-## License
+- Docker and Docker Compose installed
+- Python 3.10+ with pytest
 
-GraphRender is licensed under Apache License 2.0. See `LICENSE`.
+### Steps
+
+1. **Build and start the service:**
+
+   ```bash
+   docker compose up -d --build
+   ```
+
+2. **Wait for the service to be healthy:**
+
+   ```bash
+   docker compose ps
+   ```
+
+   The `graph-render` service should show status `healthy`.
+
+3. **Run integration tests:**
+
+   ```bash
+   INTEGRATION=1 pytest tests/integration/ -v
+   ```
+
+   Override the default service URL (`http://localhost:8080`) with `SERVICE_URL`:
+
+   ```bash
+   INTEGRATION=1 SERVICE_URL=http://localhost:8080 pytest tests/integration/ -v
+   ```
+
+4. **Tear down:**
+
+   ```bash
+   docker compose down
+   ```
+
+### Notes
+
+- Integration tests require `INTEGRATION=1` to run. Without it, they are automatically skipped.
+- Tests are self-contained and idempotent — they create their own test data and can be run repeatedly without side effects.
+- The health-check polling fixture waits up to 30 seconds (configurable via `HEALTH_TIMEOUT`) for the service to become ready.
